@@ -10,7 +10,7 @@ prog = sf.Program(1)
 
 with prog.context as q:
     Fock(0) | q[0]
-    sf.ops.Dgate(4) | q[0]
+    Dgate(4) | q[0]
 
 
 eng = sf.Engine('fock', backend_options={"cutoff_dim": 20})
